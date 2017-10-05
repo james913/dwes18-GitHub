@@ -2,13 +2,15 @@ package Figuras;
 
 import java.util.Scanner;
 
-public class Triangulo {
+public class Triangulo extends Figura {
 
 	Scanner s= new Scanner(System.in);
 	private double base;
 	private double altura ;
 	
-	public Triangulo(double base, double altura) {
+	
+	public Triangulo(double base, double altura, String titulo, Color c) {
+		super(titulo, c);
 		this.altura=altura;
 		this.base=base;
 	}
@@ -44,9 +46,9 @@ public class Triangulo {
 
 	@Override
 	public String toString() {
-		return "Triangulo [s=" + s + ", base=" + base + ", altura=" + altura + ", getBase()=" + getBase()
+		return "Triangulo [base=" + base + ", altura=" + altura + ", getBase()=" + getBase()
 				+ ", getAltura()=" + getAltura() + ", calcularArea()=" + calcularArea() + ", calcularPerimetro()="
-				+ calcularPerimetro() + "]";
+				+ calcularPerimetro() +super.toString()+ "]";
 	}
 	
 	

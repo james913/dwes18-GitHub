@@ -1,9 +1,11 @@
 package Figuras;
 
-public class Circunferencia {
+public class Circunferencia extends Figura {
 	private double radio;
 	
-	public Circunferencia( double radio) {
+
+	public Circunferencia( double radio, String titulo, Color c) {
+		super(titulo,c);
 		this.radio=radio;
 	}
 
@@ -33,7 +35,7 @@ public class Circunferencia {
 	@Override
 	public String toString() {
 		return "Circunferencia [radio=" + radio + ", calcularArea()=" + calcularArea() + ", calcularPerimetro()="
-				+ calcularPerimetro() + ", getRadio()=" + getRadio() + "]";
+				+ calcularPerimetro() + ", getRadio()=" + getRadio() + super.toString()+ "]";
 	}
 
 

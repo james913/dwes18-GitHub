@@ -2,10 +2,12 @@ package Figuras;
 
 import java.util.Scanner;
 
-public class Cuadrado {
+public class Cuadrado extends Figura {
 	private double lado;
+	
 	Scanner s= new Scanner (System.in);
-	public Cuadrado (double lado) {
+	public Cuadrado (double lado, String titulo, Color c) {
+		super(titulo, c);
 		this.lado=lado;
 	}
 	
@@ -18,7 +20,7 @@ public class Cuadrado {
 		this.lado = l;
 	}
 
-	public double Calculararea ( ) {
+	public double CalcularArea ( ) {
 		double a=0;
 		a = lado * lado;
 		return a;
@@ -32,8 +34,8 @@ public class Cuadrado {
 
 	@Override
 	public String toString() {
-		return "Cuadrado [lado=" + lado + ", s=" + s + ", getLado()=" + getLado() + ", Calculararea()=" + Calculararea()
-				+ ", Calcularperimetro()=" + Calcularperimetro() + "]";
+		return "Cuadrado [lado=" + lado  +  " getLado()=" + getLado() + ", Calculararea()=" + CalcularArea()
+				+ ", Calcularperimetro()=" + Calcularperimetro() + super.toString()+"]";
 	}
 
 
