@@ -40,7 +40,9 @@ public class fechayhora extends HttpServlet {
         DateFormat fechahora= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss ");
         out.println("<body><h1>Fecha y Hora</h1>");
         out.println("<p>Fecha y Hora: "+fechahora.format(fecha)+"</p>");
+        out.println("<a href='index.html'>Volver</a>");
         out.println("</body></html>");
+        
     }
 
 	/**

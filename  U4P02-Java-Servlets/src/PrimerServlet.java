@@ -34,6 +34,7 @@ public class PrimerServlet extends HttpServlet { // Línea B
 		out.println("<html><head><meta charset='UTF-8'/><title>Primer Servlet</title></head>");
 		out.println("<body><h1>Primer servlet</h1>");
 		out.println("<h3>Me llamo ...</h3>");
+		out.println("<a href='index.html'>Volver</a>");
 		out.println("<p>Ejecución de " + request.getContextPath() + "</p>");
 		out.println("</body></html>");
 		out.close();
